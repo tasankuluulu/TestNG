@@ -1,29 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="6" total="9" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71" started-at="2020-08-29T11:16:40 EDT" finished-at="2020-08-29T11:16:40 EDT">
+  <suite name="SmokeSuite" duration-ms="32056" started-at="2020-09-05T12:08:38 EDT" finished-at="2020-09-05T12:09:11 EDT">
     <groups>
+      <group name="regression">
+        <method signature="HardAssertionExample.loginFormText()[pri:0, instance:com.syntax.class2.HardAssertionExample@1786dec2]" name="loginFormText" class="com.syntax.class2.HardAssertionExample"/>
+        <method signature="HardAssertionExample.logoValidation()[pri:0, instance:com.syntax.class2.HardAssertionExample@1786dec2]" name="logoValidation" class="com.syntax.class2.HardAssertionExample"/>
+        <method signature="IssueWithoutAssertion.title()[pri:0, instance:com.syntax.class2.IssueWithoutAssertion@74650e52]" name="title" class="com.syntax.class2.IssueWithoutAssertion"/>
+      </group> <!-- regression -->
     </groups>
-    <test name="Default test" duration-ms="71" started-at="2020-08-29T11:16:40 EDT" finished-at="2020-08-29T11:16:40 EDT">
-      <class name="com.syntax.class1.TestNGIntro">
-        <test-method status="PASS" signature="testFour()[pri:0, instance:com.syntax.class1.TestNGIntro@1efed156]" name="testFour" duration-ms="11" started-at="2020-08-29T11:16:40 EDT" finished-at="2020-08-29T11:16:40 EDT">
+    <test name="Smoke Test" duration-ms="32056" started-at="2020-09-05T12:08:38 EDT" finished-at="2020-09-05T12:09:11 EDT">
+      <class name="com.syntax.class2.HardAssertionExample">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class2.HardAssertionExample@1786dec2]" name="openBrowser" is-config="true" duration-ms="9318" started-at="2020-09-05T12:08:39 EDT" finished-at="2020-09-05T12:08:48 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFour -->
-        <test-method status="PASS" signature="testOne()[pri:0, instance:com.syntax.class1.TestNGIntro@1efed156]" name="testOne" duration-ms="1" started-at="2020-08-29T11:16:40 EDT" finished-at="2020-08-29T11:16:40 EDT">
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginFormText()[pri:0, instance:com.syntax.class2.HardAssertionExample@1786dec2]" name="loginFormText" duration-ms="68" started-at="2020-09-05T12:08:48 EDT" finished-at="2020-09-05T12:08:48 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method status="PASS" signature="testThree()[pri:0, instance:com.syntax.class1.TestNGIntro@1efed156]" name="testThree" duration-ms="1" started-at="2020-08-29T11:16:40 EDT" finished-at="2020-08-29T11:16:40 EDT">
+        </test-method> <!-- loginFormText -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class2.HardAssertionExample@1786dec2]" name="closeBrowser" is-config="true" duration-ms="2671" started-at="2020-09-05T12:08:48 EDT" finished-at="2020-09-05T12:08:51 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testThree -->
-        <test-method status="PASS" signature="testTwo()[pri:0, instance:com.syntax.class1.TestNGIntro@1efed156]" name="testTwo" duration-ms="1" started-at="2020-08-29T11:16:40 EDT" finished-at="2020-08-29T11:16:40 EDT">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class2.HardAssertionExample@1786dec2]" name="openBrowser" is-config="true" duration-ms="6753" started-at="2020-09-05T12:08:51 EDT" finished-at="2020-09-05T12:08:57 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTwo -->
-      </class> <!-- com.syntax.class1.TestNGIntro -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="logoValidation()[pri:0, instance:com.syntax.class2.HardAssertionExample@1786dec2]" name="logoValidation" duration-ms="67" started-at="2020-09-05T12:08:57 EDT" finished-at="2020-09-05T12:08:57 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoValidation -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class2.HardAssertionExample@1786dec2]" name="closeBrowser" is-config="true" duration-ms="2654" started-at="2020-09-05T12:08:57 EDT" finished-at="2020-09-05T12:09:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.syntax.class2.HardAssertionExample -->
+      <class name="com.syntax.class2.IssueWithoutAssertion">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.syntax.class2.IssueWithoutAssertion@74650e52]" name="openBrowser" is-config="true" duration-ms="7429" started-at="2020-09-05T12:09:00 EDT" finished-at="2020-09-05T12:09:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="title()[pri:0, instance:com.syntax.class2.IssueWithoutAssertion@74650e52]" name="title" duration-ms="8" started-at="2020-09-05T12:09:07 EDT" finished-at="2020-09-05T12:09:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.syntax.class2.IssueWithoutAssertion@74650e52]" name="closeBrowser" is-config="true" duration-ms="3035" started-at="2020-09-05T12:09:07 EDT" finished-at="2020-09-05T12:09:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.syntax.class2.IssueWithoutAssertion -->
+    </test> <!-- Smoke Test -->
+  </suite> <!-- SmokeSuite -->
 </testng-results>
